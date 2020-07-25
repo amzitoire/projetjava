@@ -1,0 +1,19 @@
+.controls {
+    display: block;
+    justify-content: center;
+    border: 4px solid;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.roue {
+    display: flex;
+    justify-content: center;
+    border: 4px solid;
+    ;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    padding: 50px;
+}

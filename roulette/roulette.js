@@ -26,11 +26,13 @@ function go() {
 
      a = setInterval("diapo()",100);
      document.querySelector("#stop").disabled=false;
+     document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
     document.getElementById("i3").src=tab[nombreroulette]; 
     document.querySelector("#stop").disabled=true;
+    document.querySelector("#go").disabled=false;
 }
 
   function diapo()

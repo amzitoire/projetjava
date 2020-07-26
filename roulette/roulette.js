@@ -25,7 +25,7 @@
     
 function go() {
 
-     a = setInterval("diapo()",100);
+     a = setInterval("diapo()",10);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }

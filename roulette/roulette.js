@@ -1,6 +1,7 @@
     
   var a;
   var b;
+  var c;
   document.querySelector("#pmj").value = 100;
   var i =0 ;
  var tab=['roulette/number/0.png','roulette/number/1.png','roulette/number/2.png','roulette/number/3.png',
@@ -30,6 +31,7 @@ function go() {
 }
 function stop() {
     clearTimeout(a);
+    c = setTimeout("roulette()",500)
     document.getElementById("i3").src=tab[nombreroulette]; 
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;

@@ -2,7 +2,9 @@
   var a;
   var b;
   var c;
+  var p;
   document.querySelector("#pmj").value = 100;
+  document.querySelector("#pmo").value = 0;
   var i =0 ;
  var tab=['roulette/number/0.png','roulette/number/1.png','roulette/number/2.png','roulette/number/3.png',
  'roulette/number/4.png','roulette/number/5.png','roulette/number/6.png','roulette/number/7.png',
@@ -25,7 +27,7 @@
     
 function go() {
 
-     a = setInterval("diapo()",10);
+     a = setInterval("diapo()",100);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
@@ -62,6 +64,7 @@ function roulette()
 
 {
     var b = document.querySelector("#pmj").value ;
+    var p = document.querySelector("#pmo").value ;
     var a = document.querySelector(".pari:checked").value;
     var d = document.querySelector("#number").value ;
     if(1*d>1*b)
@@ -73,8 +76,9 @@ function roulette()
     {
         alert("Mise perdue");
         b=1*b-1*d;
-       
+        p=1*p+1*d;
         document.querySelector("#pmj").value = b ;
+        document.querySelector("#pmo").value = p ;
     }
     else if (a==nombreroulette)
     {
@@ -97,8 +101,9 @@ function roulette()
     {
         alert("Mise perdue");
         b=1*b-1*d;
-       
+        p=1*p+1*d;
         document.querySelector("#pmj").value = b ;
+        document.querySelector("#pmo").value = p ;
         
     }
     

@@ -91,8 +91,8 @@ function roulette()
     
     else if ((a=="pair" && nombreroulette%2==0 ) || (a=="impair" && nombreroulette%2==1)) 
     {
-        alert("Vous avez gagné "+2*d+" mille francs !");
-        b=1*b+2*d;
+        alert("Vous avez gagné +"+1*d+" mille francs !");
+        b=1*b+1*d;
        
         document.querySelector("#pmj").value = b ;
        

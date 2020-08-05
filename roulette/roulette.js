@@ -44,7 +44,7 @@ function go() {
 }
 function stop() {
     clearTimeout(a);
-    c = setTimeout("roulette()",500)
+    c = setTimeout("roulette()",50)
     document.getElementById("i3").src=tab[nombreroulette]; 
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;

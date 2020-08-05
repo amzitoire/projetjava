@@ -16,7 +16,18 @@
  'roulette/number/28.png','roulette/number/29.png','roulette/number/30.png','roulette/number/31.png',
  'roulette/number/32.png','roulette/number/33.png','roulette/number/34.png','roulette/number/35.png',
  'roulette/number/36.png'];
- 
+
+ var tab2=['roulette/roue/0.png','roulette/roue/1.png','roulette/roue/2.png','roulette/roue/3.png',
+ 'roulette/roue/4.png','roulette/roue/5.png','roulette/roue/6.png','roulette/roue/7.png',
+ 'roulette/roue/8.png','roulette/roue/9.png','roulette/roue/10.png','roulette/roue/11.png',
+ 'roulette/roue/12.png','roulette/roue/13.png','roulette/roue/14.png','roulette/roue/15.png',
+ 'roulette/roue/16.png','roulette/roue/17.png','roulette/roue/18.png','roulette/roue/19.png',
+ 'roulette/roue/20.png','roulette/roue/21.png', 'roulette/roue/22.png','roulette/roue/23.png',
+ 'roulette/roue/24.png','roulette/roue/25.png','roulette/roue/26.png','roulette/roue/27.png',
+ 'roulette/roue/28.png','roulette/roue/29.png','roulette/roue/30.png','roulette/roue/31.png',
+ 'roulette/roue/32.png','roulette/roue/33.png','roulette/roue/34.png','roulette/roue/35.png',
+ 'roulette/roue/36.png'];
+
  function nb_aleatoire()
     
 {
@@ -41,8 +52,8 @@ function stop() {
 
   function diapo()
 {    
-    document.slide.src=tab[i]; 
-    document.getElementById("i3").src=tab[i]; 
+    document.slide.src=tab2[i]; 
+    document.getElementById("i3").src=tab2[i]; 
   
     
     if(i<tab.length-1)
@@ -91,7 +102,7 @@ function roulette()
     
     else if ((a=="pair" && nombreroulette%2==0 ) || (a=="impair" && nombreroulette%2==1)) 
     {
-        alert("Vous avez gagné +"+1*d+" mille francs !");
+        alert("Vous avez gagné "+2*d+" mille francs !");
         b=1*b+1*d;
        
         document.querySelector("#pmj").value = b ;

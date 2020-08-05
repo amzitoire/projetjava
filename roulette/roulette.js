@@ -38,7 +38,7 @@
     
 function go() {
 
-     a = setInterval("diapo()",100);
+     a = setInterval("diapo()",20);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
@@ -58,7 +58,7 @@ function stop() {
     
     if(i<tab.length-1)
     {
-        i= nb_aleatoire(i);
+        i= i + 1;
     }
     else 
     {

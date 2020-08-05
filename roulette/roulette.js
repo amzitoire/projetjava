@@ -17,16 +17,7 @@
  'roulette/number/32.png','roulette/number/33.png','roulette/number/34.png','roulette/number/35.png',
  'roulette/number/36.png'];
 
- var tab2=['roulette/roue/0.png','roulette/roue/1.png','roulette/roue/2.png','roulette/roue/3.png',
- 'roulette/roue/4.png','roulette/roue/5.png','roulette/roue/6.png','roulette/roue/7.png',
- 'roulette/roue/8.png','roulette/roue/9.png','roulette/roue/10.png','roulette/roue/11.png',
- 'roulette/roue/12.png','roulette/roue/13.png','roulette/roue/14.png','roulette/roue/15.png',
- 'roulette/roue/16.png','roulette/roue/17.png','roulette/roue/18.png','roulette/roue/19.png',
- 'roulette/roue/20.png','roulette/roue/21.png', 'roulette/roue/22.png','roulette/roue/23.png',
- 'roulette/roue/24.png','roulette/roue/25.png','roulette/roue/26.png','roulette/roue/27.png',
- 'roulette/roue/28.png','roulette/roue/29.png','roulette/roue/30.png','roulette/roue/31.png',
- 'roulette/roue/32.png','roulette/roue/33.png','roulette/roue/34.png','roulette/roue/35.png',
- 'roulette/roue/36.png'];
+
 
  function nb_aleatoire()
     
@@ -38,34 +29,23 @@
     
 function go() {
 
-     a = setInterval("diapo()",20);
+     a = setTimeout("diapo()",20);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
-    c = setTimeout("roulette()",50)
+    c = setTimeout("roulette()",500)
+    
     document.getElementById("i3").src=tab[nombreroulette]; 
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;
 }
 
   function diapo()
-{    
-    document.slide.src=tab2[i]; 
-    document.getElementById("i3").src=tab2[i]; 
-  
-    
-    if(i<tab.length-1)
-    {
-        i= i + 1;
-    }
-    else 
-    {
-        i=0;
-    }
+{       
+    document.getElementById("i3").src='roulette/roue/casino-roulette.gif'; 
    
-    
 }
 
 

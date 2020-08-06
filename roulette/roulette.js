@@ -23,16 +23,16 @@ var a;
   var nombreroulette = nb_aleatoire(nombreroulette) ;   
 function go() {
     document.getElementById("roue").style.background='black';
-     a = setTimeout("diapo()",200);
+     a = setTimeout("diapo()",100);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
     document.getElementById("i3").src='roulette/roue/0.png'; 
+  document.getElementById("roue").style.background='gold';
     document.getElementById("i3").src=tab[nombreroulette];
-     document.getElementById("roue").style.background='gold';
-    c = setTimeout("roulette()",500);
+    c = setTimeout("roulette()",750);
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;
 }

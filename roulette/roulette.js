@@ -1,5 +1,4 @@
-    
-  var a;
+var a;
   var b;
   var c;
   var p;
@@ -16,11 +15,7 @@
  'roulette/number/28.png','roulette/number/29.png','roulette/number/30.png','roulette/number/31.png',
  'roulette/number/32.png','roulette/number/33.png','roulette/number/34.png','roulette/number/35.png',
  'roulette/number/36.png'];
-
-
-
- function nb_aleatoire()
-    
+ function nb_aleatoire()    
 {
     var nombreroulette=Math.random();
     return Math.floor(nombreroulette*36);
@@ -29,30 +24,24 @@
     
 function go() {
     document.getElementById("roue").style.background='black';
-     a = setTimeout("diapo()",20);
+     a = setTimeout("diapo()",200);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
-    c = setTimeout("roulette()",500);
-    document.getElementById("i3").src=tab[nombreroulette]; 
     document.getElementById("roue").style.background='gold';
+    c = setTimeout("roulette()",500);
+    document.getElementById("i3").src=tab[nombreroulette];
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;
 }
-
   function diapo()
 {       
     document.getElementById("i3").src='roulette/roue/casino-roulette.gif'; 
    
 }
-
-
-
-
 function roulette()
-
 {
     var b = document.querySelector("#pmj").value ;
     var p = document.querySelector("#pmo").value ;
@@ -75,7 +64,6 @@ function roulette()
     {
         alert("Vous avez gagné "+35*d+" mille francs !");
         b=1*b+36*d;
-       
         document.querySelector("#pmj").value = b ;
        
     }
@@ -83,8 +71,7 @@ function roulette()
     else if ((a=="pair" && nombreroulette%2==0 ) || (a=="impair" && nombreroulette%2==1)) 
     {
         alert("Vous avez gagné "+2*d+" mille francs !");
-        b=1*b+1*d;
-       
+        b=1*b+1*d; 
         document.querySelector("#pmj").value = b ;
        
     }
@@ -106,7 +93,4 @@ function roulette()
             document.querySelector("#pmj").value = 100;
         }
         nombreroulette = nb_aleatoire(nombreroulette)
-    
-        
-    
 }

@@ -20,8 +20,7 @@ var a;
     var nombreroulette=Math.random();
     return Math.floor(nombreroulette*36);
 }  
-  var nombreroulette = nb_aleatoire(nombreroulette) ;
-    
+  var nombreroulette = nb_aleatoire(nombreroulette) ;   
 function go() {
     document.getElementById("roue").style.background='black';
      a = setTimeout("diapo()",200);
@@ -30,8 +29,9 @@ function go() {
 }
 function stop() {
     clearTimeout(a);
-   document.getElementById("i3").src=tab[nombreroulette];
-   document.getElementById("roue").style.background='gold';
+    document.getElementById("i3").src='roulette/roue/0.png'; 
+    document.getElementById("i3").src=tab[nombreroulette];
+     document.getElementById("roue").style.background='gold';
     c = setTimeout("roulette()",500);
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;

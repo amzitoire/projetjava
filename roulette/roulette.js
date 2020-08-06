@@ -28,16 +28,17 @@
   var nombreroulette = nb_aleatoire(nombreroulette) ;
     
 function go() {
-
+    document.getElementById("roue").style.background = 'black';
      a = setTimeout("diapo()",20);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
-    c = setTimeout("roulette()",500)
+    c = setTimeout("roulette()",500);
     
     document.getElementById("i3").src=tab[nombreroulette]; 
+    document.getElementById("roue").style.background = 'gold';
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;
 }

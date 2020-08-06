@@ -22,15 +22,12 @@ var a;
 }  
   var nombreroulette = nb_aleatoire(nombreroulette) ;   
 function go() {
-    document.getElementById("roue").style.background='black';
      a = setTimeout("diapo()",100);
      document.querySelector("#stop").disabled=false;
      document.querySelector("#go").disabled=true;
 }
 function stop() {
     clearTimeout(a);
-    document.getElementById("i3").src='roulette/roue/0.png'; 
-  document.getElementById("roue").style.background='gold';
     document.getElementById("i3").src=tab[nombreroulette];
     c = setTimeout("roulette()",750);
     document.querySelector("#stop").disabled=true;

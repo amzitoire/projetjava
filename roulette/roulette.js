@@ -30,9 +30,9 @@ function go() {
 }
 function stop() {
     clearTimeout(a);
-    document.getElementById("roue").style.background='gold';
+   document.getElementById("i3").src=tab[nombreroulette];
+   document.getElementById("roue").style.background='gold';
     c = setTimeout("roulette()",500);
-    document.getElementById("i3").src=tab[nombreroulette];
     document.querySelector("#stop").disabled=true;
     document.querySelector("#go").disabled=false;
 }
